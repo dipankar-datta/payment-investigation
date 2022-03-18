@@ -59,7 +59,7 @@ public class Case {
     public String closeDate;
 
     @Column(name = "amount")
-    public String amount;
+    public Integer amount;
 
     @Column(name = "post_date")
     public String postDate;

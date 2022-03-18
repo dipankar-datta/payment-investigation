@@ -25,7 +25,7 @@ public class CaseResponse {
     public String investigationType;
     public String priority;
     public String closeDate;
-    public String amount;
+    public Integer amount;
     public String postDate;
     public String eqCurrency;
     public String currency;
