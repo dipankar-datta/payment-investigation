@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Setter
 @Getter
-@Table(name = "case")
+@Table(name = "cases")
 @Entity
 public class Case {
 
