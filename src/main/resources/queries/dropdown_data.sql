@@ -49,6 +49,9 @@ INSERT INTO dropdown_data (field_name, field_key, field_value, is_active) values
 ('default_currency', 'INR', 'INR', 'y'),
 ('default_currency', 'USD', 'USD', 'y'),
 
+('instructed_currency', 'INR', 'INR', 'y'),
+('instructed_currency', 'USD', 'USD', 'y'),
+
 ('receiving_inst_id', 'SCBIN11', 'SCBIN11', 'y'),
 ('receiving_inst_id', 'SBIIN12', 'SBIIN12', 'y'),
 ('receiving_inst_id', 'KMBIN13', 'KMBIN13', 'y'),
