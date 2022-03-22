@@ -24,6 +24,11 @@ public class CaseController {
         return caseService.getAllCases();
     }
 
+    @GetMapping("/{id}")
+    public Case getCase(@PathVariable Long id) {
+        return caseService.getCaseById(id).orElse(null);
+    }
+
     @PostMapping
     public CaseResponse saveCase(@RequestBody CaseRequest caseRequest) {
         return CaseResponse.fromEntityToResponse(caseService.saveCase(caseRequest.toEntity()));
