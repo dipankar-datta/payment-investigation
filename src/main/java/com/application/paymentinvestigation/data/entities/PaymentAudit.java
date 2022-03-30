@@ -7,13 +7,13 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Table(name = "payment")
+@Table(name = "payment_audit")
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Payment {
+public class PaymentAudit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +22,15 @@ public class Payment {
 
     @Column(name = "casebook")
     public String caseBook;
+
+    @Column(name = "user_id")
+    public String userId;
+
+    @Column(name = "access_date_time")
+    public String accessDateTime;
+
+    @Column(name = "payment_id")
+    public Long paymentId;
 
     @Column(name = "response_status")
     public String responseStatus;
