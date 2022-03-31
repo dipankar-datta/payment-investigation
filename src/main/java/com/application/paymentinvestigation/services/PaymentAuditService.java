@@ -1,20 +1,17 @@
 package com.application.paymentinvestigation.services;
 
-import com.application.paymentinvestigation.data.entities.Payment;
 import com.application.paymentinvestigation.data.entities.PaymentAudit;
 import com.application.paymentinvestigation.data.repositories.PaymentAuditRepository;
-import com.application.paymentinvestigation.data.repositories.PaymentRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class PaymentAuditService {
 
     private PaymentAuditRepository paymentAuditRepository;
 
-    public PaymentAuditService(PaymentAuditRepository paymentRepository) {
+    public PaymentAuditService(PaymentAuditRepository paymentAuditRepository) {
         this.paymentAuditRepository = paymentAuditRepository;
     }
 
