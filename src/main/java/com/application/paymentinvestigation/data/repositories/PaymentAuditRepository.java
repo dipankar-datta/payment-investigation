@@ -10,4 +10,6 @@ import java.util.List;
 public interface PaymentAuditRepository extends JpaRepository<PaymentAudit, Long> {
 
     List<PaymentAudit> findByTransactionReferenceNumber(String transactionReferenceNumber);
+
+    List<PaymentAudit> findByCaseBook(String caseBook);
 }

@@ -18,4 +18,8 @@ public class PaymentAuditService {
     public List<PaymentAudit> getPaymentsBySenderRefNum(String senderRefNum) {
         return paymentAuditRepository.findByTransactionReferenceNumber(senderRefNum);
     }
+
+    public List<PaymentAudit> getPaymentsByCaseNumber(String senderRefNum) {
+        return paymentAuditRepository.findByCaseBook(senderRefNum);
+    }
 }

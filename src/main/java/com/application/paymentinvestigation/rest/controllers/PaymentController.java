@@ -31,4 +31,9 @@ public class PaymentController {
     public List<PaymentAudit> getPaymentDetailsAudit(@PathVariable String senderRefNum) {
         return paymentAuditService.getPaymentsBySenderRefNum(senderRefNum);
     }
+
+    @GetMapping(path = "/research/{caseNumber}/audit/bycase")
+    public List<PaymentAudit> getPaymentDetailsAuditByCase(@PathVariable String caseNumber) {
+        return paymentAuditService.getPaymentsByCaseNumber(caseNumber);
+    }
 }
