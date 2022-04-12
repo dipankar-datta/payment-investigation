@@ -2,13 +2,11 @@ package com.application.paymentinvestigation.rest.controllers;
 
 import com.application.paymentinvestigation.data.entities.Correspondence;
 import com.application.paymentinvestigation.services.CorrespondenceService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/correspondence")
 public class CorrespondenceController {
