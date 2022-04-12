@@ -17,6 +17,11 @@ public class CorrespondenceController {
         this.correspondenceService = correspondenceService;
     }
 
+    @PostMapping
+    public Correspondence createCorrespondence(@RequestBody Correspondence correspondence) {
+        return correspondenceService.saveCorrespondence(correspondence);
+    }
+
     @GetMapping(path = "/{caseNumber}")
     public List<Correspondence> getCorrespondencesByCase(@PathVariable String caseNumber) {
         return correspondenceService.getCorrespondencesByCase(caseNumber);
