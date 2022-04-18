@@ -16,17 +16,20 @@ public class Correspondence {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    public Long id;
+    private Long id;
 
     @Column(name = "casebook")
-    public String casebook;
+    private String casebook;
 
     @Column(name = "correspondence_type")
-    public String correspondenceType;
+    private String correspondenceType;
 
     @Column(name = "inbound_outbound")
-    public String inboundOutbound;
+    private String inboundOutbound;
 
     @Column(name = "message")
-    public String message;
+    private String message;
+
+    @Transient
+    private String password;
 }
